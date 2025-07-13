@@ -6,6 +6,11 @@ type vendor_qvrd_vndr_cam_exec, vendor_file_type, exec_type, file_type;
 
 init_daemon_domain(vendor_qvrd_vndr_cam)
 
+type vendor_qvrd_vndr_cam, domain, mlstrustedsubject;
+type vendor_qvrd_vndr_cam_exec, vendor_file_type, exec_type, file_type;
+
+init_daemon_domain(vendor_qvrd_vndr_cam)
+
 binder_service(vendor_qvrd_vndr_cam)
 
 hal_server_domain(vendor_qvrd_vndr_cam, vendor_hal_qvrcamservice_qti)
